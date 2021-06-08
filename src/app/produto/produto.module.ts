@@ -1,12 +1,12 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
+import { AtoPageRoutingModule } from './produto-routing.module';
+import { ProdutoPage } from './produto.page';
 
-import { AtoPageRoutingModule } from './cadastro-routing.module';
 
-import { CadastroPage } from './cadastro.page';
+
 
 @NgModule({
   imports: [
@@ -16,6 +16,6 @@ import { CadastroPage } from './cadastro.page';
     AtoPageRoutingModule,
     ReactiveFormsModule
   ],
-  declarations: [CadastroPage]
+  declarations: [ProdutoPage]
 })
-export class CadastroPageModule {}
+export class ProdutoPageModule {}

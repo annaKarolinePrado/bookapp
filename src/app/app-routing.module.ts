@@ -7,20 +7,29 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
-    path: 'listagem-livro',
-    loadChildren: () => import('./cadastro/listagem-livros/listagem-livros.module').then( m => m.ListagemLivroPageModule)
+    path: 'listagem-produto',
+    loadChildren: () => import('./produto/listagem-produtos/listagem-produtos.module').then( m => m.ListagemProdutoPageModule)
   },
   {
-    path: 'cadastro-livro',
-    loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
-  },
-  {
-    path: 'autor-livro',
-    loadChildren: () => import('./autores/autores.module').then( m => m.AutoresPageModule)
+    path: 'cadastro-produto',
+    loadChildren: () => import('./produto/produto.module').then( m => m.ProdutoPageModule)
   },
   {
     path: 'edicao/:id',
-    loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
+    loadChildren: () => import('./produto/produto.module').then( m => m.ProdutoPageModule)
+  },
+
+  {
+    path: 'listagem-pessoa',
+    loadChildren: () => import('./pessoa/listagem-pessoas/listagem-pessoas.module').then( m => m.ListagemPessoaPageModule)
+  },
+  {
+    path: 'cadastro-pessoa',
+    loadChildren: () => import('./pessoa/pessoa.module').then( m => m.PessoaPageModule)
+  },
+  {
+    path: 'edicao/:id',
+    loadChildren: () => import('./pessoa/pessoa.module').then( m => m.PessoaPageModule)
   }
 ];
 @NgModule({
