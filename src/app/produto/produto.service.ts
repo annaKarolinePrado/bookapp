@@ -27,7 +27,7 @@ export class ProdutoService {
   }
 
   private adicionar(produto: Produto)  {
-    return this.httpClient.post(this.url, produto);
+    return this.httpClient.post(this.url, produto)
   }
 
   private atualizar(produto: Produto) {

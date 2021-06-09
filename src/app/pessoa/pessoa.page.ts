@@ -65,7 +65,7 @@ export class PessoaPage implements OnInit {
   salvar() {
     const pessoa: Pessoa = {...this.pessoaForm.value, id: this.pessoaId}
     this.pessoaService.salvar(pessoa).subscribe(
-      () => this.router.navigate(['pessoas']),
+      () => this.router.navigate(['listagem-pessoa']),
       (erro) => {
         console.error(erro);
         this.toastController.create({

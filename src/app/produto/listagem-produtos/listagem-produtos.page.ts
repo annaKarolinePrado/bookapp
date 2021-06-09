@@ -53,7 +53,7 @@ export class ListagemProdutoPage implements OnInit {
       );
   }
   listar() {
-    /*
+
     this.produtoService
       .getProdutos()
       .subscribe(
@@ -63,21 +63,6 @@ export class ListagemProdutoPage implements OnInit {
         (erro) => {
           console.error(erro);
         }
-      );*/
-
-      let l1 ={
-        id : 10,
-        descricao: 'Camiseta',
-        preco: 100,
-
-      }
-
-      let l2 = {
-        id : 11,
-        descricao: 'Camiseta',
-        preco: 100,
-      }
-      this.produtos.push(l1);
-      this.produtos.push(l2);
+      );
   }
 }

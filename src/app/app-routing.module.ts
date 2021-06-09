@@ -28,7 +28,7 @@ const routes: Routes = [
     loadChildren: () => import('./pessoa/pessoa.module').then( m => m.PessoaPageModule)
   },
   {
-    path: 'edicao/:id',
+    path: 'pessoa/edicao/:id',
     loadChildren: () => import('./pessoa/pessoa.module').then( m => m.PessoaPageModule)
   }
 ];

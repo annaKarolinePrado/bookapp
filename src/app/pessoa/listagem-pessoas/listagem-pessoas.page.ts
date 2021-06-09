@@ -53,7 +53,6 @@ export class ListagemPessoaPage implements OnInit {
       );
   }
   listar() {
-    /*
     this.pessoaService
       .getPessoas()
       .subscribe(
@@ -63,21 +62,6 @@ export class ListagemPessoaPage implements OnInit {
         (erro) => {
           console.error(erro);
         }
-      );*/
-
-      let l1 ={
-        id : 10,
-        descricao: 'Camiseta',
-        preco: 100,
-
-      }
-
-      let l2 = {
-        id : 11,
-        descricao: 'Camiseta',
-        preco: 100,
-      }
-      this.pessoas.push(l1);
-      this.pessoas.push(l2);
+      );
   }
 }
